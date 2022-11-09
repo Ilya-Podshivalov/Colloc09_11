@@ -1,12 +1,15 @@
+
 public class FasadStroki {
-    private Stroki example;
-    public FasadStroki(Stroki example){
-        this.example = example;
+
+    private StrokiAdd stroki;
+    private StrokiAddN strokiAddN;
+    public FasadStroki(StrokiAdd stroki, StrokiAddN strokiAddN){
+        this.stroki = stroki;
+        this. strokiAddN = strokiAddN;
     }
-    public String functionAdd(Stroki example){
-        return example.MethodAdd(example.str1, example.str2);
-    }
-    public String functionAddN(Stroki example){
-        return example.MethodAddN(example.str1, example.n);
+    public Struct result(){
+       Struct.s1 = stroki.MethodAdd(stroki.str1, stroki.str2);
+       Struct.s2 = strokiAddN.MethodAddN(strokiAddN.str1, strokiAddN.n);
+       return new Struct();
     }
 }

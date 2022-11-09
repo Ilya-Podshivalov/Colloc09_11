@@ -2,12 +2,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class StrokiTest {
+public class StrokiAddTest {
 
     String str1;
     String str2;
     Integer n;
-    Stroki a = new Stroki();
+    StrokiAdd a = new StrokiAdd();
 
 
     @Test
@@ -25,21 +25,5 @@ public class StrokiTest {
         str2 = " = c";
         String result = "a + b = c";
         Assert.assertEquals(result, a.MethodAdd(str1, str2));
-    }
-
-    @Test
-    public void methodAddN() {
-        str1 = "Брат ";
-        n = 5;
-        String result = "Брат Брат Брат Брат Брат ";
-        Assert.assertEquals(result, a.MethodAddN(str1, n));
-    }
-
-    @Test
-    public void testMethodAddN() {
-        str1 = "Работает, наверное";
-        n = 1;
-        String result = "Работает, наверное";
-        Assert.assertEquals(result, a.MethodAddN(str1, n));
     }
 }
